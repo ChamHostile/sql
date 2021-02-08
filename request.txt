@@ -20,7 +20,7 @@
 
 #11 SELECT titre,date_debut_affiche,date_fin_affiche, DATEDIFF(date_fin_affiche, date_debut_affiche)*24 AS temps_affiche FROM film WHERE DATEDIFF(date_fin_affiche,date_debut_affiche) <> 'null' ORDER BY `temps_affiche` DESC
 
-#12
+#12 SELECT COUNT(DISTINCT(abonnement.id)) AS 'nombre_abonnement', CEIL(AVG(abonnement.prix)) AS 'moyenne_abonnement', COUNT(membre.abo_id) AS 'nombre_abonnees'  FROM `abonnement`, `membre` WHERE membre.abo_id = abonnement.id AND membre.abo_id > 0 AND abonnement.id > 0
 
 #13
 
