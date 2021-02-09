@@ -22,7 +22,7 @@
 
 #12 SELECT COUNT(DISTINCT(abonnement.id)) AS 'nombre_abonnement', CEIL(AVG(abonnement.prix)) AS 'moyenne_abonnement', COUNT(membre.abo_id) AS 'nombre_abonnees'  FROM `abonnement`, `membre` WHERE membre.abo_id = abonnement.id AND membre.abo_id > 0 AND abonnement.id > 0
 
-#13
+#13 SELECT nom, pourcentage_reduc FROM `reduction` WHERE pourcentage_reduc > 0 AND pourcentage_reduc NOT IN (25) ORDER BY pourcentage_reduc DESC
 
 #14
 
