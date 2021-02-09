@@ -28,7 +28,7 @@
 
 #15 SELECT nom AS 'nom_genre', MAX(film.duree_min) AS 'duree_min' FROM `genre`, `film` WHERE film.genre_id = genre.id AND film.genre_id IS NOT NULL GROUP BY genre.nom
 
-#16
+#16 SELECT SUM(nbr_siege) FROM `salle` WHERE etage_salle = 1
 
 #17
 
